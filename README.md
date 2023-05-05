@@ -1,7 +1,7 @@
 # React App
 
-Desenvolvendo o consomu do API local feita em nodejs.
-Projeto da API. 
+Esse site foi desenvolvido em react para o consumo da api-rest-node.
+
 [API NODE](https://github.com/jeangondorek/api-rest-nodejs)
 
 ## Instalando projeto
