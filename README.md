@@ -1,7 +1,7 @@
 # React App
 
 Desenvolvendo o consomu do API local feita em nodejs.
-Projeto da API. https://github.com/jeangondorek/apinodejs
+Projeto da API. [https://github.com/jeangondorek/apinodejs](https://github.com/jeangondorek/api-rest-nodejs)
 
 ## Instalando projeto
 - ```npm install```
