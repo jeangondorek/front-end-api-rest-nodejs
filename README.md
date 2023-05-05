@@ -12,4 +12,4 @@ Projeto da API.
 - ```npm start```
 
 ## Criando Build para deploy
-- ```npm run build```# 
+- ```npm run build```
