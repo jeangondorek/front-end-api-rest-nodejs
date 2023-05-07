@@ -1,5 +1,6 @@
 import React from 'react';
 import api from '../Services/Api';
+import "./../css/main.css";
 
 const DeleteUser = () => {
   const deleteUserById = async (id) => {
@@ -7,8 +8,8 @@ const DeleteUser = () => {
   };
 
   return (
-    <div>
-      <h2>DELETAR USER</h2>
+    <div className='function ml-8'>
+      <h2 className='text-2xl'>Deletar usuários</h2>
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -17,9 +18,9 @@ const DeleteUser = () => {
         }}
       >
         <div className='form-control'>
-          <label htmlFor='id'>ID do usuário a ser deletado</label>
+          <label htmlFor='id'>ID do usuário a ser deletado: </label>
           <input type='text' name='id' placeholder='digite o ID' />
-          <input type='submit' value='deleta user' className='btn' />
+          <input type='submit' value='Exluir usuário' className='btn rounded-full' />
         </div>
       </form>
     </div>

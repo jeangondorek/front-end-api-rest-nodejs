@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import api from '../Services/Api';
+import "./../css/main.css";
 
 const UpdateUser = () => {
   const [id, setId] = useState('');
@@ -14,11 +15,11 @@ const UpdateUser = () => {
   };
 
   return (
-    <div>
-      <h2>Atualizar Usuário</h2>
+    <div className='function ml-8'>
+      <h2 className='text-2xl'>Atualizar Usuário</h2>
       <form onSubmit={updateUser}>
         <div className="form-control">
-          <label htmlFor="id">ID do Usuário:</label>
+          <label htmlFor="id">Id do Usuário:</label>
           <input type="text" name="id" placeholder="Digite o ID do usuário" onChange={(e) => setId(e.target.value)} />
         </div>
         <div className="form-control">
@@ -29,7 +30,7 @@ const UpdateUser = () => {
           <label htmlFor="salary">Salário:</label>
           <input type="text" name="salary" placeholder="Digite o salário do usuário" onChange={(e) => setSalary(e.target.value)} />
         </div>
-        <button type="submit">Atualizar Usuário</button>
+        <button type="submit" className='btn rounded-full'>Atualizar Usuário</button>
       </form>
     </div>
   );

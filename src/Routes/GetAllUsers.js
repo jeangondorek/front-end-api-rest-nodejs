@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import api from '../Services/Api';
+import "./../css/main.css";
 
 class GetAllUsers extends Component {
     state = {
@@ -16,20 +17,32 @@ class GetAllUsers extends Component {
 
     return (
         <>
-        <div>
-            <h1>Listar os Users</h1>
+        <div className='ml-8 mt-8'>
+            <h1 className='text-4xl'>Lista de usuários</h1>
             {person.map(user => (
                 <>
-                <h1>---------------</h1>
-                <h2>
-                    ID: {user._id}
-                </h2>
-                <h2>
-                    Nome: {user.name}
-                </h2>
-                <h2>
-                    Salário: {user.salary}
-                </h2>
+                <table>
+                    <tr>
+                        <td className="p-2 w-20 shadow rounded">
+                            ID
+                        </td>
+                        <td className="p-2 w-80 shadow rounded">
+                            {user._id}
+                        </td>
+                        <td className="p-2 w-20 shadow rounded">
+                            Nome
+                        </td>
+                        <td className="p-2 w-80 shadow rounded">
+                            {user.name}
+                        </td>
+                        <td className="p-2 w-20 shadow rounded">
+                            Salário
+                        </td>
+                        <td className="p-2 w-20 shadow rounded">
+                            {user.salary}
+                        </td>
+                    </tr>
+                </table>
                 </>
             ))}
         </div>
