@@ -26,6 +26,6 @@ Esse site foi desenvolvido em react para o consumo da api-rest-node.
 
 <br/><br/>
 
-Front end bastante simples só para utilização da api e estudos.
+Front end bastante simples só para utilização da api e estudos. A cada iteração deve se dar o reload no navegador para ver os efeitos.
 
 ![image](https://user-images.githubusercontent.com/38532877/236704743-a92460bb-1672-4cff-b83d-a063763ea290.png)
