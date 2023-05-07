@@ -7,7 +7,7 @@ class GetAllUsers extends Component {
         person: [],
     }
     async componentDidMount() {
-        const response = await api.get('person');
+        const response = await api.get('/person');
         this.setState({ person: response.data });
     }
 
