@@ -8,7 +8,7 @@ const DeleteUser = () => {
   };
 
   return (
-    <div className='function ml-8'>
+    <div className='border-orange-900 p-5 rounded-full border-solid border-4 function ml-8'>
       <h2 className='text-2xl'>Deletar usuários</h2>
       <form
         onSubmit={(e) => {
@@ -19,7 +19,7 @@ const DeleteUser = () => {
       >
         <div className='form-control'>
           <label htmlFor='id'>ID do usuário a ser deletado: </label>
-          <input type='text' name='id' placeholder='digite o ID' />
+          <input className='w-80' type='text' name='id' placeholder='digite o ID' />
           <input type='submit' value='Exluir usuário' className='btn rounded-full' />
         </div>
       </form>

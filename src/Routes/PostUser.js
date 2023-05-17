@@ -14,14 +14,14 @@ const PostUser = () =>{
         await api.post("/person", person);
     }
 
-    return <div className='function ml-4'>
+    return <div className='border-orange-900 p-10 rounded-full border-solid border-4 function ml-4'>
         <h2 className='ml-8 mt-8 text-2xl'>Cadastrar novo usuário</h2>
         <form onSubmit={(e)=>{createUser(e)}}>
-            <div className='form-control p-2 w-80'>
+            <div className='flex-auto form-control p-2'>
                 <label htmlFor='name'>Nome: </label>
-                <input type='text' name='name' placeholder='digite nome' onChange={(e) => setName(e.target.value)}/>
+                <input className='w-80' type='text' name='name' placeholder='digite nome' onChange={(e) => setName(e.target.value)}/>
                 <label htmlFor='salary'>Salario: </label>
-                <input type='text' name='salary' placeholder='digite Salario' onChange={(e) => setSalary(e.target.value)}/>
+                <input className='w-80' type='text' name='salary' placeholder='digite Salario' onChange={(e) => setSalary(e.target.value)}/>
                 <input type='submit' value='Cria usuário' className='btn rounded-full'/>
             </div>
         </form>

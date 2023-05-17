@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'link da api rodando, projeto em https://github.com/jeangondorek/api-rest-nodejs'
+    baseURL: 'http://localhost:3001'
 });
 
 export default api;
