@@ -24,6 +24,9 @@ Esse site foi desenvolvido em react para o consumo da api-rest-node.
 ## Criando Build para deploy
 - ```npm run build```
 
+## Clean cache
+- ```npm cache clean -f```
+- ```rm -rf node_modules package-lock.json```
 
 <br/><br/>
 
